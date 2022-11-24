@@ -49,7 +49,7 @@ namespace kimonoちゃんストレスメーター
                 //文字色の変更処理
                 
                 //旧式
-                /*if(new_score >= 50)
+                /*if(new_score >= 70)
                 {
                     if (new_score >= 100)
                     {
@@ -65,11 +65,14 @@ namespace kimonoちゃんストレスメーター
                 //新式、初めてのswitch式
                 switch (new_score)
                 {
-                    case 50:
+                    case 70:
                         label2.ForeColor = Color.DarkOrange;
                         break;
-                    case 100:
+                    case 90:
                         label2.ForeColor = Color.Red;
+                        break;
+                    case 100:
+                        label2.ForeColor = Color.DarkRed;
                         break;
                 }
                 
