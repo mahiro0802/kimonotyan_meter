@@ -1,0 +1,10 @@
+E:\いろいろ\kimonoちゃんストレスメーター\bin\Debug\kimonoちゃんストレスメーター.exe.config
+E:\いろいろ\kimonoちゃんストレスメーター\bin\Debug\kimonoちゃんストレスメーター.exe
+E:\いろいろ\kimonoちゃんストレスメーター\bin\Debug\kimonoちゃんストレスメーター.pdb
+E:\いろいろ\kimonoちゃんストレスメーター\obj\Debug\kimonoちゃんストレスメーター.csproj.AssemblyReference.cache
+E:\いろいろ\kimonoちゃんストレスメーター\obj\Debug\kimonoちゃんストレスメーター.Form1.resources
+E:\いろいろ\kimonoちゃんストレスメーター\obj\Debug\kimonoちゃんストレスメーター.Properties.Resources.resources
+E:\いろいろ\kimonoちゃんストレスメーター\obj\Debug\kimonoちゃんストレスメーター.csproj.GenerateResource.cache
+E:\いろいろ\kimonoちゃんストレスメーター\obj\Debug\kimonoちゃんストレスメーター.csproj.CoreCompileInputs.cache
+E:\いろいろ\kimonoちゃんストレスメーター\obj\Debug\kimonoちゃんストレスメーター.exe
+E:\いろいろ\kimonoちゃんストレスメーター\obj\Debug\kimonoちゃんストレスメーター.pdb
