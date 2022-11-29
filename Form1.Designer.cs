@@ -46,9 +46,9 @@ namespace kimonoちゃんストレスメーター
             // 
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(12, 99);
+            this.progressBar1.Location = new System.Drawing.Point(12, 104);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(352, 43);
+            this.progressBar1.Size = new System.Drawing.Size(391, 43);
             this.progressBar1.TabIndex = 0;
             // 
             // label2
@@ -68,7 +68,7 @@ namespace kimonoちゃんストレスメーター
             this.設定ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(376, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(415, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,7 +85,7 @@ namespace kimonoちゃんストレスメーター
             // リセットToolStripMenuItem
             // 
             this.リセットToolStripMenuItem.Name = "リセットToolStripMenuItem";
-            this.リセットToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.リセットToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.リセットToolStripMenuItem.Text = "リセット";
             this.リセットToolStripMenuItem.Click += new System.EventHandler(this.リセットToolStripMenuItem_Click);
             // 
@@ -97,7 +97,7 @@ namespace kimonoちゃんストレスメーター
             // 終了XToolStripMenuItem
             // 
             this.終了XToolStripMenuItem.Name = "終了XToolStripMenuItem";
-            this.終了XToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.終了XToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.終了XToolStripMenuItem.Text = "終了(&X)";
             this.終了XToolStripMenuItem.Click += new System.EventHandler(this.終了XToolStripMenuItem_Click);
             // 
@@ -120,7 +120,7 @@ namespace kimonoちゃんストレスメーター
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 154);
+            this.ClientSize = new System.Drawing.Size(415, 159);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.menuStrip1);

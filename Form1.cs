@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Security.Permissions;
 using System.Windows.Forms;
 
 namespace kimonoちゃんストレスメーター
@@ -18,8 +19,21 @@ namespace kimonoちゃんストレスメーター
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //設定の引継ぎ
+            if (Properties.Settings.Default.IsUpgrade == false)
+            {
+                // Upgradeを実行する
+                Properties.Settings.Default.Upgrade();
+
+                // 「Upgradeを実行した」という情報を設定する
+                Properties.Settings.Default.IsUpgrade = true;
+
+                // 現行バージョンの設定を保存する
+                Properties.Settings.Default.Save();
+            }
             //ロード時に前回設定したフォントを読み込む
             label2.Font = Properties.Settings.Default.font;
+            // = Orientation.Horizontal;
         }
 
         private void フォント変更ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -81,6 +95,35 @@ namespace kimonoちゃんストレスメーター
                 {
                     //プログレスバーの数字にプラス1する
                     progressBar1.Value = progressBar1.Value + 1;
+                }
+            }
+            //押されたキーがBackSpaceか調べる
+            if(e.KeyCode == Keys.Back)
+            {
+                //新しい数値
+                int new_score = int.Parse(label2.Text) - 1;
+                //新しい数値をテキストにセットする
+                label2.Text = new_score.ToString();
+                //文字色変更
+                switch (new_score)
+                {
+                    case 69:
+                        label2.ForeColor = Color.Black;
+                        break;
+                    case 89:
+                        label2.ForeColor = Color.DarkOrange;
+                        break;
+                    case 99:
+                        label2.ForeColor = Color.Red;
+                        break;
+                }
+                if (progressBar1.Value <= 100)
+                {
+                    if(progressBar1.Value >= 1)
+                    {
+                        //プログレスバーの数字にマイナス1する
+                        progressBar1.Value = progressBar1.Value - 1;
+                    }
                 }
             }
         }
